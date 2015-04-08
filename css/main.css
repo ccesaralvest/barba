@@ -28,10 +28,22 @@ p {
 	letter-spacing: 1px;
 }
 
+.seta {
+	position: fixed;
+	margin-top: 300px;
+}
+.seta:hover {
 
+}
+/*header {
+	margin-left: 260px;
+}
+section {
+	margin-left: 260px;
+}*/
 /* =============================== MODIFICANDO A MARGIN DO CONTAINER FLUID PADRAO */
 .container-fluid {
-	margin-left: 280px;
+	margin-left: 0px;
 	margin-right: 20px;
 }
 
@@ -48,6 +60,7 @@ p {
 	padding-top: 0;
 	margin-top: 0;
 }
+
 .separador {
 	width: 100%;
 }
@@ -63,13 +76,23 @@ p {
 }
 
 /* =============================== FORMATACAO DE UM ARTIGO */
-.artigo img {
-	width: cover;
-	height: cover;
-	max-height: 300px;
-	margin-top: 30px;
-	overflow: hidden; 	
+/* === IMAGENS */
+.case-img {
+	width: 100%;
 }
+.case-img img {
+	width: 1200px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	border: 3px solid #ddd;
+}
+/* === IMAGENS */
+.artigo h1 {	
+	font-size: 38px;
+}
+
 /* =============================== FOOTER DE REFERENCIAS */
 .referencias ul {
 	margin-left: -20px;
@@ -85,25 +108,29 @@ p {
 	margin-top: 10px;
 }
 
-
 .grafs .col-xs-12 img,
 .grafs .col-sm-12 img,
 .grafs .col-md-6 img {
-
 	margin: 0 auto;
 }
-
-
-
+.grafs .col-xs-12,
+.grafs .col-sm-12,
+.grafs .col-md-6 {	
+	margin-bottom: 20px;
+}
 
 @media (min-width:768px) {
 	/* =============================== MENU LATERAL */
+	.navbar {
+		display: none;
+	}
 	.navbar-inverse {
 		background-image: none;
 		background-color: #F8F8F8 !important;
 	}
 	.navbar-inverse .navbar-nav>li>a {
 		color: black;
+		font-size: 15px;
 	}
 	.navbar-inverse .navbar-nav>li>a:hover{
 		color: #39abed;
@@ -138,8 +165,7 @@ p {
 		width: auto !important;
 		height: 100%;
 		padding-bottom: 0;
-		overflow: visible !important;
-		
+		overflow: visible !important;		
 	}
 	.navbar-collapse.in {
 		overflow-x: visible;
@@ -204,11 +230,7 @@ p {
 		margin-right: 3px;
 	}
 	/* =============================== FORMATACAO DE UM ARTIGO */
-	.artigo img {
-		width: cover;
-		height: cover;
-		max-height: 300px;
-		margin-top: 70px;
-		overflow: hidden; 	
+	.grafs {
+		width: 100%;
 	}
 }
