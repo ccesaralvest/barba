@@ -11,13 +11,13 @@ $(document).ready(function(){
 		});	
 
 		// Efeito no background
-		$('.section-inicial').css("background-size","100%");
-		$('.section-inicial').animate({"background-size":"150%"}, 900, "linear");
+		// $('.section-inicial').css("background-size","100%");
+		// $('.section-inicial').animate({"background-size":"150%"}, 900, "linear");
 		
-		// $('.section-inicial').mouseover(function(){
-		// 	$(this).css("background-size","100%");
-		// 	$(this).animate({"background-size":"150%"}, 6000, "linear");
-		// });
+		$('.section-inicial').mouseenter(function(){
+			//$(this).css("background-size","100%");
+			//$(this).animate({"background-size":"150%"}, 6000, "linear");
+		});
 	}
 	
 
